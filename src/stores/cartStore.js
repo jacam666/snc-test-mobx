@@ -6,13 +6,12 @@ class CartStore {
     constructor() {
         makeAutoObservable(this, {
             cartItems: observable,
-        
         });
     }
 
     addToCart(item) {
         this.cartItems.push(item);
-        console.log('Current cart items:', this.cartItems); 
+        console.log('Current cart items:', this.cartItems);
     }
 }
 

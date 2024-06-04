@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 
-const Basket = dynamic(() => import('../../components/Basket'), { ssr: false });
+const Basket = dynamic(() => import('@/components/Basket'), { ssr: false });
 
 const BasketPage = () => {
     return <Basket />;
